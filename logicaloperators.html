@@ -81,14 +81,18 @@
         Bonus point: make it work with brazil, BRAZIL, PORTUGAL, pORTugal etc
         */
 
+        function canSpeakPortuguese(){
+
         let country= prompt("What country are you from?");
-              alert(country);
-        if(country === Portugal|| country === Brazil ){
-            alert("You can speak Portuguese.");
+              // country = country.toLowerCase().trim();
+        if(country === "Portugal"|| country === "Brazil" ){
+            alert("You speak Portuguese.");
         }
          else{
-          alert(`You don't speak Portuguese`);
+          alert("Go learn Portuguese!");
          }
+        }
+        canSpeakPortuguese();
     </script>
   </body>
 </html>
