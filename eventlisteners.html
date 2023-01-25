@@ -81,18 +81,20 @@
                  If 18 or more, change the h1 to  “Hi, {Name}! Welcome to SheCodes !”
                 Otherwise change the h1 to  “Sorry, {Name}! You cannot join SheCodes ”*/
 
+                    function updateHeading(newHeading){
+                         let heading= document.querySelector("h1");
+                         heading.innerHTML=newHeading;
+                    }
                 function applyNow(){
                     let firstName= prompt("What is your first name?");
                     
                     let age= prompt("What is your age?");
                     
-                    let h1= document.querySelector("h1");
-                    
                     if(age >=18){
-                    h1.innerHTML=`Hi, ${firstName}! Welcome to SheCodes !`;
+                    updateHeading(`Hi, ${firstName}! Welcome to SheCodes !`);
                     }
                     else{
-                     h1.innerHTML=`Sorry, ${firstName}! You cannot join SheCodes`;
+                     updateHeading(`Sorry, ${firstName}! You cannot join SheCodes`);
                     }
                 }
                let contactButton= document.querySelector("button");
