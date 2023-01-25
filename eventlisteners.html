@@ -86,12 +86,18 @@
                     
                     let age= prompt("What is your age?");
 
-
                     if(age >=18){
-
+                         let h1= document.querySelector("h1");
+                    h1.innerHTML=`Hi, ${firstName}! Welcome to SheCodes !`;
+                    }
+                    else{
+                         let h1= document.querySelector("h1");
+                    
+                         h1.innerHTML=`Sorry, ${firstName}! You cannot join SheCodes`;
                     }
                 }
                let contactButton= document.querySelector("button");
+               contactButton.addEventListener("click", applyNow);
             </script>
         </body>
         </html>
