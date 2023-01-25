@@ -127,10 +127,10 @@
             let temperature= prompt(' What is the temperature?');
 
             if(temp => 20){
-                updateHeading(`😊Currently ${temperature} °C in ${city} `);
+                updateHeading(`😊 <br/> Currently  ${temperature} °C in ${city} `);
             }
-            if(temp < -10 || temp <= 0){
-                updateHeading(`😒Currently ${temperature} °C in ${city} `)
+            if(temp < -10 || temp < 0){
+                updateHeading(`😒 <br/> Currently ${temperature} °C in ${city} `)
             }
         
         }
