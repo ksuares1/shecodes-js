@@ -85,14 +85,12 @@
                     let firstName= prompt("What is your first name?");
                     
                     let age= prompt("What is your age?");
-
-                    if(age >=18){
                     let h1= document.querySelector("h1");
+                    if(age >=18){
                     h1.innerHTML=`Hi, ${firstName}! Welcome to SheCodes !`;
                     }
                     else{
-                     let h1= document.querySelector("h1");
-                    h1.innerHTML=`Sorry, ${firstName}! You cannot join SheCodes`;
+                     h1.innerHTML=`Sorry, ${firstName}! You cannot join SheCodes`;
                     }
                 }
                let contactButton= document.querySelector("button");
